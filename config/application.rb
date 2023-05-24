@@ -4,6 +4,7 @@ require_relative 'boot'
 require 'rails'
 require 'active_storage/engine'
 require 'action_text/engine'
+require 'singleton-client'
 
 %w(
   active_record/railtie
@@ -59,5 +60,9 @@ module WebsiteOne
     config.autoload_paths += Dir[Rails.root.join('app', '**/')]
     config.autoload_paths += Dir[Rails.root.join('lib')]
 
+    Sgtn.product_name = 'WebsiteOne'
+    Sgtn.version = '1.0.0'
+    Sgtn.vip_server = 'http://localhost:8091'
+    Sgtn.source_bundle = './config/sources'
   end
 end

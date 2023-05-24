@@ -146,3 +146,6 @@ end
 
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 gem 'ice_cube', github: 'ice-cube-ruby/ice_cube', ref: '6b97e77c106cd6662cb7292a5f59b01e4ccaedc6'
+
+gem 'singleton-client'
+gem 'http_accept_language', '~> 2.1.1'

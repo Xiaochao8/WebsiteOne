@@ -9,6 +9,7 @@ class ApplicationController < ActionController::Base
   before_action :get_next_scrum, :store_location, unless: -> { request.xhr? }
   before_action :configure_permitted_parameters, if: :devise_controller?
   after_action :user_activity
+  around_action :switch_locale
 
   # use_vanity :current_user
 
@@ -90,5 +91,10 @@ class ApplicationController < ActionController::Base
 
   def set_user_id
     cookies[:user_id] = current_user.id if current_user
+  end
+
+  def switch_locale(&action)
+    locale = http_accept_language.user_preferred_languages[0]
+    Sgtn.with_locale(locale, &action)
   end
 end
