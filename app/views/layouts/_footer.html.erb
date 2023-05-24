@@ -4,12 +4,12 @@
       <div class="footer-info col-xs-6 col-sm-4">
         <ul>
           <h3>Learn More</h3>
-          <li><%= link_to 'About Us', static_page_path('About Us') %></li>
-          <li><%= link_to 'Getting Started', static_page_path('Getting Started') %></li>
-          <li><%= link_to 'Dashboard', dashboard_index_path %></li>
-          <li><%= link_to 'Opportunities', static_page_path('Opportunities') %></li>
-          <li><%= link_to 'Blog', 'http://nonprofits.agileventures.org/blog/' %> </li>
-          <li><%= link_to 'Press Kit', 'http://www.agileventures.org/press-kit' %></li>
+          <li><%= link_to Sgtn.t('layouts.About.Us', 'views'), static_page_path('About Us') %></li>
+          <li><%= link_to Sgtn.t('layouts.Getting.Started', 'views'), static_page_path('Getting Started') %></li>
+          <li><%= link_to Sgtn.t('layouts.Dashboard', 'views'), dashboard_index_path %></li>
+          <li><%= link_to Sgtn.t('layouts.Opportunities', 'views'), static_page_path('Opportunities') %></li>
+          <li><%= link_to Sgtn.t('layouts.Blog', 'views'), 'http://nonprofits.agileventures.org/blog/' %> </li>
+          <li><%= link_to Sgtn.t('layouts.Press.Kit', 'views'), 'http://www.agileventures.org/press-kit' %></li>
         </ul>
       </div>
 
@@ -42,7 +42,7 @@
             <a href="http://mooqita.org/" target="_blank">Mooqita</a>
           </li>
           <li>
-            <%= link_to 'Becoming a sponsor', static_page_path('Sponsors'), style: 'font-size: 0.9em;' %>
+            <%= link_to Sgtn.t('layouts.Becoming.a.sponsor', 'views'), static_page_path('Sponsors'), style: 'font-size: 0.9em;' %>
           </li>
         </ul>
       </div>

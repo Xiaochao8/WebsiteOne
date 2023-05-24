@@ -4,4 +4,4 @@
 
 <p>Click the link below to unlock your account:</p>
 
-<p><%= link_to 'Unlock my account', unlock_url(@resource, :unlock_token => @token) %></p>
+<p><%= link_to Sgtn.t('devise.mailer.Unlock.my.account', 'views'), unlock_url(@resource, :unlock_token => @token) %></p>

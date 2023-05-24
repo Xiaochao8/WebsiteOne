@@ -15,7 +15,7 @@
 </div>
 
 <div>
-  <strong><%= link_to 'List of Projects', projects_path %></strong> <i class="fa fa-angle-double-right"></i>
+  <strong><%= link_to Sgtn.t('documents.List.of.Projects', 'views'), projects_path %></strong> <i class="fa fa-angle-double-right"></i>
   <strong><%= link_to @project.title, project_path(@project) %></strong> <i class="fa fa-angle-double-right"></i>
   <% unless @document.root? %>
     <strong><%= link_to @document.parent.title, project_document_path(@project, @document.parent) %></strong>
@@ -44,8 +44,8 @@
 <%= h(@document.content) %>
 
 <% if user_signed_in? %>
-  <%= link_to 'Save', '', id: 'save_link', class: 'btn btn-default', style: 'display:none;' %>
-  <%= link_to 'Cancel', '', id: 'cancel_link', class: 'btn btn-default', style: 'display:none;' %>
+  <%= link_to Sgtn.t('documents.Save', 'views'), '', id: 'save_link', class: 'btn btn-default', style: 'display:none;' %>
+  <%= link_to Sgtn.t('documents.Cancel', 'views'), '', id: 'cancel_link', class: 'btn btn-default', style: 'display:none;' %>
 <% end %>
 <div class="small-divider"></div>
 <div>

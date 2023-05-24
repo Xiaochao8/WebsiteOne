@@ -13,7 +13,7 @@
             <td><%= format_date(hangout.start_datetime) %></td>
             <td><%= format_time(hangout.start_datetime) %></td>
             <td id="join">
-              <%= link_to 'Join', hangout.hangout_url %>
+              <%= link_to Sgtn.t('hookups.Join', 'views'), hangout.hangout_url %>
             </td>
           </tr>
       <% end %>
@@ -35,7 +35,7 @@
             <td><%= format_time_range(hookup) %></td>
             <% if user_signed_in? %>
                 <td id="start">
-                  <%= link_to 'Create Hangout', event_path(hookup) %>
+                  <%= link_to Sgtn.t('hookups.Create.Hangout', 'views'), event_path(hookup) %>
                 </td>
             <% end %>
           </tr>

@@ -7,7 +7,7 @@
         <ul>
           <li>
             <% if params[:tag]  || (params[:controller] == 'articles' && params[:action] == 'show') %>
-              <%= link_to 'All Articles', articles_path %>
+              <%= link_to Sgtn.t('layouts.All.Articles', 'views'), articles_path %>
             <% else %>
               <p class="sidebar-selected">All Articles</p>
             <% end %>

@@ -27,17 +27,17 @@
       <%= awesome_text_area f, :description, rows: 10 %>
 
       <div class="form-group event_date">
-        <%= label_tag 'start_datetime', 'Start Datetime', class: 'control-label' %>
+        <%= label_tag 'start_datetime', Sgtn.t('events.Start.Datetime', 'views'), class: 'control-label' %>
         <%= datetime_local_field_tag :start_datetime, start_datetime.strftime("%Y-%m-%dT%H:%M"), 'data-events-form-target': 'start' %>
         <%= hidden_field_tag 'next_date', @event.next_event_occurrence_with_time() ? format_datepicker(@event.next_event_occurrence_with_time()[:time]) : format_datepicker(DateTime.now) %>
       </div>
 
       <div class="form-group event_time">
-         <%= select_tag 'start_time_tz', options_from_collection_for_select( TZInfo::Timezone.all, 'identifier', 'identifier', 'UTC'), { class: 'form-control', style: 'width:auto;', 'data-events-form-target': 'start_tz' } %>
+         <%= select_tag Sgtn.t('events.start_time_tz', 'views'), options_from_collection_for_select( TZInfo::Timezone.all, 'identifier', 'identifier', 'UTC'), { class: 'form-control', style: 'width:auto;', 'data-events-form-target': 'start_tz' } %>
       </div>
 
       <div class="form-group">
-        <%= label_tag :duration, "Duration in Minutes", class: 'control-label' %>
+        <%= label_tag :duration, Sgtn.t('events.Duration.in.Minutes', 'views'), class: 'control-label' %>
         <%= f.number_field :duration, style: 'width:auto;', value: duration, class: 'form-control' %>
       </div>
 
@@ -48,12 +48,12 @@
       </div>
 
       <div class="form-group event_option" id="repeats_options">
-        <%= label_tag 'event_repeat_ends_string', 'Repeat ends', class: 'control-label' %>
+        <%= label_tag 'event_repeat_ends_string', Sgtn.t('events.Repeat.ends', 'views'), class: 'control-label' %>
         <%= f.select :repeat_ends_string, Event::REPEAT_ENDS_OPTIONS, {}, class: 'form-control' %>
       </div>
 
       <div class="form-group event_option repeat_ends_on">
-        <%= label_tag 'repeat_ends_on', 'End Date', class: 'control-label', id: 'repeat_ends_on_label' %>
+        <%= label_tag 'repeat_ends_on', Sgtn.t('events.End.Date', 'views'), class: 'control-label', id: 'repeat_ends_on_label' %>
         <%= date_select :event, :repeat_ends_on %>
       </div>
 
@@ -63,9 +63,9 @@
 
       <div class="form-group">
         <% if @event.new_record? %>
-          <%= link_to 'Cancel', events_path, class: 'btn btn-default' %>
+          <%= link_to Sgtn.t('events.Cancel', 'views'), events_path, class: 'btn btn-default' %>
         <% else %>
-          <%= link_to 'Cancel', event_path(@event), class: 'btn btn-default' %>
+          <%= link_to Sgtn.t('events.Cancel', 'views'), event_path(@event), class: 'btn btn-default' %>
         <% end %>
         <%= f.submit 'Save', class: 'btn btn-default', data: {disable_with: 'Working...'} %>
       </div>

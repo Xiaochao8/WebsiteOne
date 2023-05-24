@@ -7,14 +7,14 @@
     <div class="modal-body">
       <%= form_for [@user, @contact_form], :url => {:controller => 'users', :action => 'hire_me'}, :method => "post" do |f| %>
           <div class='form-group'>
-            <%= f.text_field :name, :id => 'f-name', :class => 'form-control', placeholder: 'Name' %>
+            <%= f.text_field :name, :id => 'f-name', :class => 'form-control', placeholder: Sgtn.t('layouts.Name', 'views') %>
             <%= f.hidden_field :recipient_id, :value => @user.id %>
           </div>
           <div class='form-group'>
-            <%= f.text_field :email, :id => "f-email", :class => 'form-control', placeholder: 'Email' %>
+            <%= f.text_field :email, :id => "f-email", :class => 'form-control', placeholder: Sgtn.t('layouts.Email', 'views') %>
           </div>
           <div class='form-group'>
-            <%= f.text_area :message, :id => "f-message", :class => 'form-control', placeholder: 'Message', 'rows' => 5 %>
+            <%= f.text_area :message, :id => "f-message", :class => 'form-control', placeholder: Sgtn.t('layouts.Message', 'views'), 'rows' => 5 %>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

@@ -1,7 +1,7 @@
 <% provide :title, @page.title %>
 
 <div id="ancestry">
-  <strong><%= link_to 'Agile Ventures', root_path %></strong><i class="fa fa-angle-double-right"></i>
+  <strong><%= link_to Sgtn.t('static_pages.Agile.Ventures', 'views'), root_path %></strong><i class="fa fa-angle-double-right"></i>
   <% @ancestry.each do |page| %>
     <strong><%= link_to page, static_page_path(page) %></strong>
     <% unless @ancestry.last == page %>
@@ -10,6 +10,6 @@
   <% end %>
 </div>
 
-<%= link_to 'Edit Page', github_static_pages_edit_url, class: 'btn btn-default pull-right' %>
+<%= link_to Sgtn.t('static_pages.Edit.Page', 'views'), github_static_pages_edit_url, class: 'btn btn-default pull-right' %>
 
 <div id="static_page_body"><%= clean_html(@page.body) %></div>

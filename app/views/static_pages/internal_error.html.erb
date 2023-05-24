@@ -8,5 +8,5 @@
   <p>Please try again later, or if you'd like more help and support feel free to email us at the address below.</p>
   <%= mail_to "info@agileventures.org", nil, subject: "500 Internal Error" %>
   <hr>
-  <%= button_to "Return Home", root_path %>
+  <%= button_to Sgtn.t('static_pages.Return.Home', 'views'), root_path %>
 </section>

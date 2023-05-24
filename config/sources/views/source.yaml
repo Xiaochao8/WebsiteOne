@@ -1,0 +1,102 @@
+---
+source:
+  articles.Back: Back
+  devise.mailer.Change.my.password: Change my password
+  devise.mailer.Confirm.my.account: Confirm my account
+  devise.mailer.Unlock.my.account: Unlock my account
+  devise.passwords.Enter.email: Enter email
+  devise.passwords.Enter.new.password: Enter new password
+  devise.passwords.Repeat.new.password: Repeat new password
+  devise.registrations.Are.you.sure: Are you sure?
+  devise.registrations.Cancel: Cancel
+  devise.registrations.Cancel.my.account: Cancel my account
+  devise.registrations.Change.your.avatar: Change your avatar
+  devise.registrations.Deactivate.Account: Deactivate Account
+  devise.registrations.Edit: Edit
+  devise.registrations.Enter.email: Enter email
+  devise.registrations.Enter.password: Enter password
+  devise.registrations.Forgot.your.password: Forgot your password?
+  devise.registrations.Privacy.statement: Privacy statement
+  devise.registrations.Repeat.password: Repeat password
+  devise.registrations.Sign.in: Sign in
+  devise.sessions.Enter.email: Enter email
+  devise.sessions.Enter.password: Enter password
+  devise.sessions.Forgot.your.password: Forgot your password?
+  devise.sessions.Sign.up: Sign up
+  devise.shared.Didn.t.receive.confirmation.instructions: Didn't receive confirmation instructions?
+  devise.shared.Didn.t.receive.unlock.instructions: Didn't receive unlock instructions?
+  devise.shared.Forgot.your.password: Forgot your password?
+  devise.shared.Sign.in: Sign in
+  devise.shared.Sign.in.with.provider_to_s_titleize: Sign in with %{provider_to_s_titleize}
+  devise.shared.Sign.up: Sign up
+  documents.Back: Back
+  documents.Cancel: Cancel
+  documents.List.of.Projects: List of Projects
+  documents.Save: Save
+  documents.Title: Title
+  event_instances.Join: Join
+  event_instances.Watch: Watch
+  event_instances.show.all.live: show all/live
+  events.All: All
+  events.Cancel: Cancel
+  events.Duration.in.Minutes: Duration in Minutes
+  events.Edit.Event.Details: Edit Event Details
+  events.Edit.hangout.link: Edit hangout link
+  events.Edit.streaming.link: Edit streaming link
+  events.End.Date: End Date
+  events.Event.live.Join.now: Event live! Join now
+  events.Event.time.Start.now: Event time! Start now
+  events.Filter.by.Project: Filter by Project
+  events.New.Event: New Event
+  events.Repeat.ends: Repeat ends
+  events.Start.Datetime: Start Datetime
+  events.calendar: calendar
+  events.start_time_tz: start_time_tz
+  hookups.Create.Hangout: Create Hangout
+  hookups.Join: Join
+  layouts.About: About
+  layouts.About.Us: About Us
+  layouts.All.Articles: All Articles
+  layouts.Become.a.supporter: Become a supporter
+  layouts.Becoming.a.sponsor: Becoming a sponsor
+  layouts.Blog: Blog
+  layouts.Click.to.join: Click to join!
+  layouts.Dashboard: Dashboard
+  layouts.Email: Email
+  layouts.Get.involved: Get involved
+  layouts.Getting.Started: Getting Started
+  layouts.Getting.started: Getting started
+  layouts.Log.in: Log in
+  layouts.Members: Members
+  layouts.Message: Message
+  layouts.Name: Name
+  layouts.Opportunities: Opportunities
+  layouts.Press.Kit: Press Kit
+  layouts.Projects: Projects
+  layouts.Sign.up: Sign up
+  layouts.Take.me.to.my.profile.page: Take me to my profile page
+  layouts.next.projects.review.meeting: next projects' review meeting
+  project_mailer.www.agileventures.org: www.agileventures.org
+  project_mailer.www.agileventures.org.users.edit: www.agileventures.org/users/edit
+  projects.Back: Back
+  projects.Description: Description
+  projects.Language: Language...
+  projects.Name: Name
+  projects.Paste.a.link.to.your.image.here: Paste a link to your image here
+  projects.Projects: Projects
+  projects.https.github.com.projectname: https://github.com/projectname
+  projects.https.www.pivotaltracker.com.s.projects.id: https://www.pivotaltracker.com/s/projects/id
+  projects.project_slack_channel_name: project_slack_channel_name
+  projects.scrums: scrums
+  static_pages.Agile.Ventures: Agile Ventures
+  static_pages.Edit.Page: Edit Page
+  static_pages.GitHub.repo: GitHub repo
+  static_pages.Return.Home: Return Home
+  users.Project.involvement: Project involvement...
+  users.Search: Search
+  users.profile.Adjust.Level: Adjust Level
+  users.profile.Plan: Plan
+  users.profile.Upgrade.to.Premium.Plus: Upgrade to Premium Plus
+  visitors.Events: Events
+  visitors.Members: Members
+  visitors.Projects: Projects

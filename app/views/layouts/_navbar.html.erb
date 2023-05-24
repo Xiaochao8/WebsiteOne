@@ -37,8 +37,8 @@
         <% end %>
       <% else %>
         <div id="login-signup">
-          <%= link_to 'Log in', new_user_session_path %>
-          <%= link_to 'Sign up', new_user_registration_path, id: 'signup' %>
+          <%= link_to Sgtn.t('layouts.Log.in', 'views'), new_user_session_path %>
+          <%= link_to Sgtn.t('layouts.Sign.up', 'views'), new_user_registration_path, id: 'signup' %>
         </div>
       <% end %>
     </div>
@@ -56,10 +56,10 @@
       <div class="col-xs-12 col-sm-9 col-md-10">
         <div class="">
           <ul class="nav navbar-nav nav-justified">
-            <li><%= link_to 'About', static_page_path('About Us'), class: is_in_static_page?('About Us') ? 'active' : ''%></li>
-            <li><%= link_to 'Projects', projects_path, class: active_if_controller_is('projects') %></li>
-            <li><%= link_to 'Members', users_path, class: active_if_controller_is('users') %></li>
-            <li><%= link_to 'Get involved', static_page_path('Membership Plans'), class: active_if_controller_is('subscriptions') %></li>
+            <li><%= link_to Sgtn.t('layouts.About', 'views'), static_page_path('About Us'), class: is_in_static_page?('About Us') ? 'active' : ''%></li>
+            <li><%= link_to Sgtn.t('layouts.Projects', 'views'), projects_path, class: active_if_controller_is('projects') %></li>
+            <li><%= link_to Sgtn.t('layouts.Members', 'views'), users_path, class: active_if_controller_is('users') %></li>
+            <li><%= link_to Sgtn.t('layouts.Get.involved', 'views'), static_page_path('Membership Plans'), class: active_if_controller_is('subscriptions') %></li>
             <li class="dropdown">
               <a href="#" id="events-dropdown" data-toggle="dropdown">Events
                 <span class="caret"></span></a>
@@ -79,7 +79,7 @@
                 </a>
               </ul>
             </li>
-            <li><%= link_to 'Getting started', static_page_path('Getting started'), class: "#{is_in_static_page?('Getting started') ? 'active' : ''}" %></li>
+            <li><%= link_to Sgtn.t('layouts.Getting.started', 'views'), static_page_path('Getting started'), class: "#{is_in_static_page?('Getting started') ? 'active' : ''}" %></li>
 
             <li class="dropdown" id="google-search-dropdown">
               <a href="#" id="google_search" data-toggle="dropdown">
@@ -122,10 +122,10 @@
               </li>
             <% else %>
               <li class="visible-xs">
-                <%= link_to 'Log in', new_user_session_path %>
+                <%= link_to Sgtn.t('layouts.Log.in', 'views'), new_user_session_path %>
               </li>
               <li class="visible-xs">
-                <%= link_to 'Sign up', new_user_registration_path, id: 'signup' %>
+                <%= link_to Sgtn.t('layouts.Sign.up', 'views'), new_user_registration_path, id: 'signup' %>
               </li>
             <% end %>
           </ul>

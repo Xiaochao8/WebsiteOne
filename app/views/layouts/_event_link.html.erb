@@ -3,7 +3,7 @@
     <%= link_to event_name_or_invitation_to_guest_user(event), event_path(event['id']) %>
     <% start_time = event.next_occurrence_time_attr.to_datetime %>
     <% if event.last_hangout.try!(:live?) %>
-      is live! <%= link_to 'Click to join!', event.last_hangout.hangout_url %>
+      is live! <%= link_to Sgtn.t('layouts.Click.to.join', 'views'), event.last_hangout.hangout_url %>
     <% elsif start_time - 1.minute < Time.now %>
       is about to start...
     <% else %>
@@ -12,6 +12,6 @@
   </p>
 <% else %>
   <p>
-    Want to learn more? Listen in to our <%= link_to 'next projects\' review meeting', events_path %>
+    Want to learn more? Listen in to our <%= link_to Sgtn.t('layouts.next.projects.review.meeting', 'views'), events_path %>
   </p>
 <% end %>
