@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 require 'custom_errors'
+require 'http_accept_language'
+
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :static_page_path
